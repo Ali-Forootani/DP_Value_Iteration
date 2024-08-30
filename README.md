@@ -55,9 +55,12 @@ This directory includes all the necessary files to run the LSTD approach. The fi
 $\mu = [0.483723,\ 0.444019,\ 0.024843,\ 0.335103]$.
 
 
-## Article
+## Articles
 
 1. Forootani, Ali, et al. "Modelling and solving resource allocation problems via a dynamic programming approach." International Journal of Control 94.6 (2021): 1544-1555.
+2. Forootani, Ali, et al. "Approximate dynamic programming for stochastic resource allocation problems." IEEE/CAA Journal of Automatica Sinica 7.4 (2020): 975-990.
+3. Forootani, Ali, et al. "A least-squares temporal difference based method for solving resource allocation problems." IFAC Journal of Systems and Control 13 (2020): 100106.
+4. Forootani, Ali, et al. "Allocating resources via price management systems: a dynamic programming-based approach." International Journal of Control 94.8 (2021): 2123-2143.
 
 you can contact me via: aliforootani@ieee.org
 
