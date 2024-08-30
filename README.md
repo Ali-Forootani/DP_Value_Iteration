@@ -15,6 +15,10 @@ This MATLAB script solves a revenue optimization problem using Dynamic Programmi
    - Enter the number of resources (N).
    - Provide any additional inputs if required (such as loading matrices).
 
+## Main .m file
+
+**Exact DP**: To run the DP algorithm for the MDP you should run this m-file!
+
 ## Script Explanation
 The script consists of the following main sections:
 
