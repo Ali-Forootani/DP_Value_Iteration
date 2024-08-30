@@ -1,5 +1,3 @@
-# Dynamic-Programming-for-MDP
-Sure! Here's a README file explaining the MATLAB script for revenue optimization using Dynamic Programming:
 
 # Revenue Optimization using Dynamic Programming
 
@@ -28,7 +26,7 @@ The script consists of the following main sections:
 
 4. **Dynamic Programming**: The script applies Dynamic Programming to evaluate the optimal decision-making strategy and revenue for each state and time step. It iterates over the time steps in reverse order, evaluating each state and action based on transition probabilities and previously calculated values.
 
-5. **Frequency Distribution Before Reservation**: The script calculates the frequency distribution of decisions (actions) before reservation for each time step. The results are saved in the `frequency_decision_BD` variable.
+5. **Frequency Distribution of Different Decisions**: The script calculates the frequency distribution of decisions (actions) before reservation for each time step. The results are saved in the `frequency_decision_BD` variable.
 
 6. **Plotting**: The script includes plotting commands to visualize the frequency distribution of decisions over time. The results can be displayed in multiple subplots.
 
