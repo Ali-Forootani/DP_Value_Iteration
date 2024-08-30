@@ -31,13 +31,13 @@ T=200;
 %e.g. C=[0.9 1 1.1]; "1*m" vector
 
 %%
-%lambda = [0.090596; 0.048632; 0.015657; 0.005088]
-%mu = [0.483723; 0.444019; 0.024843; 0.335103]
-%C = [0.8 0.9 1 1.1]
+lambda = [0.090596; 0.048632; 0.015657; 0.005088]
+mu = [0.483723; 0.444019; 0.024843; 0.335103]
+C = [0.8 0.9 1 1.1]
 
 %Suitable lambda and mu found:
-%Lambda: [0.049297, 0.071014, 0.084126, 0.098124]
-%Mu: [0.158740, 0.158214, 0.108782, 0.125521]
+%lambda=[0.049297; 0.071014; 0.084126; 0.098124]
+%mu= [0.158740; 0.158214; 0.108782; 0.125521]
 %State with maximum difference: [0, 0, 0, 0]
 %Maximum difference in transition probabilities: 0.0981
 
@@ -149,8 +149,11 @@ Revenue(1:NS(1,1),(m+2),T)=0;
 
 while k>= 1
     
-    lambda=[0.5+0.1*cos(k*pi/3);0.3+.1*sin(k*pi/7);0.2+0.1*cos(k*pi/5)];
-    mu=[0.3-0.1*cos(k*pi/3);0.4-0.1*sin(k*pi/7);0.5-0.1*cos(k*pi/5)];
+    %lambda=[0.5+0.1*cos(k*pi/3);0.3+.1*sin(k*pi/7);0.2+0.1*cos(k*pi/5)];
+    %mu=[0.3-0.1*cos(k*pi/3);0.4-0.1*sin(k*pi/7);0.5-0.1*cos(k*pi/5)];
+
+    %lambda=[0.5+0.1*cos(k*pi/3);0.3+.1*sin(k*pi/7);0.2+0.1*cos(k*pi/5); 0.15-0.05*cos(k*pi/6)];
+    %mu=[0.3-0.1*cos(k*pi/3);0.4-0.1*sin(k*pi/7);0.5-0.1*cos(k*pi/5); 0.6+0.05*cos(k*pi/6)];
     
     while n1<= NS(1,1) 
         while a <= m 
@@ -216,24 +219,69 @@ subplot(3,1,3)
 %plot(frequency_decision_net(:,3)/st_size(1))
 hold on
 plot(frequency_decision_BD(:,3)/st_size(1))
-%subplot(4,1,4)
+subplot(4,1,4)
 %plot(frequency_decision_net(:,4)/st_size(1))
-hold on
+%hold on
 %plot(frequency_decision_BD(:,4)/st_size(1))
+%%
+% Set the figure size to be larger
+figure('Position', [100, 100, 1000, 800]);
+
+% First subplot
+subplot(3,1,1)
+hold on
+plot(frequency_decision_BD(:,1)/st_size(1), 'LineWidth', 3)
+%plot(frequency_decision_net(:,1)/st_size(1), 'LineWidth', 3) % Uncomment if you want to include this
+ylabel('C_1', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
+%legend('Booking Case', 'No Booking Case', 'Location', 'northeast', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
+grid on
+
+% Second subplot
+subplot(3,1,2)
+hold on
+plot(frequency_decision_BD(:,2)/st_size(1), 'LineWidth', 3)
+%plot(frequency_decision_net(:,2)/st_size(1), 'LineWidth', 3) % Uncomment if you want to include this
+ylabel('C_2', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
+grid on
+
+% Third subplot
+subplot(3,1,3)
+hold on
+plot(frequency_decision_BD(:,3)/st_size(1), 'LineWidth', 3)
+%plot(frequency_decision_net(:,3)/st_size(1), 'LineWidth', 3) % Uncomment if you want to include this
+xlabel('Time Slot', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
+ylabel('C_3', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
+grid on
+
+% Optional Fourth subplot
+% subplot(4,1,4)
+% hold on
+% plot(frequency_decision_BD(:,4)/st_size(1), 'LineWidth', 3)
+% plot(frequency_decision_net(:,4)/st_size(1), 'LineWidth', 3) % Uncomment if you want to include this
+% xlabel('Time Slot', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
+% ylabel('Frequency', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
+% grid on
+
+% General settings
+set(gcf, 'Color', 'w'); % Set the background to white
+
+% Apply font settings to all axes
+set(findall(gcf, 'Type', 'axes'), 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold');
+
 
 %%
 
 % Assuming Revenue is already defined and has size [56, 5, 200]
 
 % Extract the data you want to plot
-data_to_plot = squeeze(Revenue(12, 4, :));
+data_to_plot = squeeze(Revenue(12, 5, :));
 
 % Plotting the data
 figure;
 plot(data_to_plot);
 xlabel('Time Step');
 ylabel('Value');
-title('Plot of Revenue(1, 4, :)');
+title('Plot of Revenue(1, 5, :)');
 
 
 
