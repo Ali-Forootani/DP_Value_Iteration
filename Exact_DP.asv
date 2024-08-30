@@ -1,12 +1,8 @@
 
-%%================ Exact DP for MDP Problem (Resource Allocation)
+%%================ Exact DP for MDP Problem
 % Writen by Ali Forootani
 % This MDP has been proposed in the following article:
-% Forootani, Ali, et al. "Modelling and solving resource allocation problems via a dynamic programming approach." International Journal of Control 94.6 (2021): 1544-1555.
-% Forootani, Ali, et al. "Approximate dynamic programming for stochastic resource allocation problems." IEEE/CAA Journal of Automatica Sinica 7.4 (2020): 975-990.
-% It was used in severl articles to test various ADP/RL algorithms
-% It supports both time varying/time invarient transition probabiltiy matrices, discounted and
-% undiscounted MDPs
+% 
 
 clear all
 clc
