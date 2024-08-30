@@ -18,7 +18,7 @@ This MATLAB script solves a revenue optimization problem using Dynamic Programmi
 ## Main .m files
 
 **Exact DP**: To run the DP algorithm for the MDP you should run `Exact DP.m`!
-** **: To run the ADP algorithm for the MDP you shoudl run `ADP_folder/LSTD_max_norm_version_3.m`
+**Approximate DP**: To run the ADP algorithm for the MDP you shoudl run `ADP_folder/LSTD_max_norm_version_3.m`
 
 ## Script Explanation
 The script consists of the following main sections:
