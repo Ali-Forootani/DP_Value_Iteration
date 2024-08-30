@@ -1,5 +1,6 @@
 
-%%================ Exact DP
+%%================ Exact DP for MDP Problem
+% Writen by Ali Forootani
 
 clear all
 clc
@@ -183,13 +184,12 @@ while k>= 1
     n1=1;
 end
 
-%%
 
 %% Frequency Distribution Before Reservation
 
-%m=4;
+
 st_size(1)=NS(1);
-T=200;
+
 for n40=1:T
     accumulative_var=zeros(1,m);
     for a=1:m
@@ -202,86 +202,6 @@ for n40=1:T
     end
     %accumulative_var=zeros(1,m+2);
 end
-
-%%
-hold on
-
-subplot(3,1,1)
-%plot(frequency_decision_net(:,1)/st_size(1))
-hold on
-plot(frequency_decision_BD(:,1)/st_size(1))
-legend('Booking Case','No Booking Case')
-subplot(3,1,2)
-%plot(frequency_decision_net(:,2)/st_size(1))
-hold on
-plot(frequency_decision_BD(:,2)/st_size(1))
-subplot(3,1,3)
-%plot(frequency_decision_net(:,3)/st_size(1))
-hold on
-plot(frequency_decision_BD(:,3)/st_size(1))
-subplot(4,1,4)
-%plot(frequency_decision_net(:,4)/st_size(1))
-%hold on
-%plot(frequency_decision_BD(:,4)/st_size(1))
-%%
-% Set the figure size to be larger
-figure('Position', [100, 100, 1000, 800]);
-
-% First subplot
-subplot(3,1,1)
-hold on
-plot(frequency_decision_BD(:,1)/st_size(1), 'LineWidth', 3)
-%plot(frequency_decision_net(:,1)/st_size(1), 'LineWidth', 3) % Uncomment if you want to include this
-ylabel('C_1', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
-%legend('Booking Case', 'No Booking Case', 'Location', 'northeast', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
-grid on
-
-% Second subplot
-subplot(3,1,2)
-hold on
-plot(frequency_decision_BD(:,2)/st_size(1), 'LineWidth', 3)
-%plot(frequency_decision_net(:,2)/st_size(1), 'LineWidth', 3) % Uncomment if you want to include this
-ylabel('C_2', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
-grid on
-
-% Third subplot
-subplot(3,1,3)
-hold on
-plot(frequency_decision_BD(:,3)/st_size(1), 'LineWidth', 3)
-%plot(frequency_decision_net(:,3)/st_size(1), 'LineWidth', 3) % Uncomment if you want to include this
-xlabel('Time Slot', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
-ylabel('C_3', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
-grid on
-
-% Optional Fourth subplot
-% subplot(4,1,4)
-% hold on
-% plot(frequency_decision_BD(:,4)/st_size(1), 'LineWidth', 3)
-% plot(frequency_decision_net(:,4)/st_size(1), 'LineWidth', 3) % Uncomment if you want to include this
-% xlabel('Time Slot', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
-% ylabel('Frequency', 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold')
-% grid on
-
-% General settings
-set(gcf, 'Color', 'w'); % Set the background to white
-
-% Apply font settings to all axes
-set(findall(gcf, 'Type', 'axes'), 'FontName', 'Times New Roman', 'FontSize', 20, 'FontWeight', 'bold');
-
-
-%%
-
-% Assuming Revenue is already defined and has size [56, 5, 200]
-
-% Extract the data you want to plot
-data_to_plot = squeeze(Revenue(12, 5, :));
-
-% Plotting the data
-figure;
-plot(data_to_plot);
-xlabel('Time Step');
-ylabel('Value');
-title('Plot of Revenue(1, 5, :)');
 
 
 
