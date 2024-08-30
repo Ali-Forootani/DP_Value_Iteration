@@ -15,9 +15,10 @@ This MATLAB script solves a revenue optimization problem using Dynamic Programmi
    - Enter the number of resources (N).
    - Provide any additional inputs if required (such as loading matrices).
 
-## Main .m file
+## Main .m files
 
-**Exact DP**: To run the DP algorithm for the MDP you should run this m-file!
+**Exact DP**: To run the DP algorithm for the MDP you should run `Exact DP.m`!
+** **: To run the ADP algorithm for the MDP you shoudl run `ADP_folder/LSTD_max_norm_version_3.m`
 
 ## Script Explanation
 The script consists of the following main sections:
@@ -50,7 +51,7 @@ $\mu = [0.483723,\ 0.444019,\ 0.024843,\ 0.335103]$.
 
 ### ADP Folder 
 
-This directory includes all the necessary files to run the LSTD approach. The file "LSTD_max_norm_version_3.m" should be run and you required to insert "m" and "N" as the input parameters! 
+This directory includes all the necessary files to run the LSTD approach. The file `LSTD_max_norm_version_3.m` should be run and you required to insert `m` and `N` as the input parameters! 
 - Note that you need to specify $\lambda$ and $\mu$, here we use $\lambda= [0.090596,\ 0.048632,\ 0.015657,\ 0.005088],$ and the death probabilities is 
 $\mu = [0.483723,\ 0.444019,\ 0.024843,\ 0.335103]$.
 
