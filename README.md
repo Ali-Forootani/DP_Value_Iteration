@@ -1,5 +1,5 @@
 
-# Revenue Optimization using Dynamic Programming
+# Revenue Optimization using Dynamic Programming/ ADP.(On the Value Iteration algorithm of Dynamic Programming) 
 
 This MATLAB script solves a revenue optimization problem using Dynamic Programming. It calculates the optimal revenue and decision-making strategy over a given time horizon, considering the constraints on prices and resources.
 
