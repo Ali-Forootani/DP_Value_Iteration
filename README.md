@@ -37,8 +37,10 @@ The script consists of the following main sections:
 
 ### Examples:
 
-1. **Example 1**: Applying DP algorithm for a resource allocation problem with `m=4`, and `N=4`, with $\alpha=0.9$, `c= [0.8,\ 0.9,\ 1,\ 1.1]`. For this configuration the set of birth probabilities is $\lambda= [0.090596,\ 0.048632,\ 0.015657,\ 0.005088],$ and the death probabilities is 
+1. **Example 1**: Applying DP algorithm for a resource allocation problem with `m=4`, and `N=4`, with $\alpha=0.9$, $c= [0.8,\ 0.9,\ 1,\ 1.1]$. For this configuration the set of birth probabilities is $\lambda= [0.090596,\ 0.048632,\ 0.015657,\ 0.005088],$ and the death probabilities is 
 $\mu = [0.483723,\ 0.444019,\ 0.024843,\ 0.335103]$.
+
+2. **Example 2**: Applying random policy on the MDP in example 1 
 
 ## Article
 
