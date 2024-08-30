@@ -35,6 +35,11 @@ The script consists of the following main sections:
 - The script might require modifications or additional code to handle specific problem instances or constraints.
 - If you encounter any issues or have questions, please feel free to contact the author.
 
+### Examples:
+
+1. **Example 1**: Applying DP algorithm for a resource allocation problem with `m=4`, and `N=4`, with $\alpha=0.9$, `c= [0.8,\ 0.9,\ 1,\ 1.1]`. For this configuration the set of birth probabilities is $\lambda= [0.090596,\ 0.048632,\ 0.015657,\ 0.005088],$ and the death probabilities is 
+$\mu = [0.483723,\ 0.444019,\ 0.024843,\ 0.335103]$.
+
 ## Article
 
 1. Forootani, Ali, et al. "Modelling and solving resource allocation problems via a dynamic programming approach." International Journal of Control 94.6 (2021): 1544-1555.
