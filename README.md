@@ -48,6 +48,8 @@ $\mu = [0.483723,\ 0.444019,\ 0.024843,\ 0.335103]$.
 
 2. **Example 2**: Applying random policy on the MDP in example 1
 
+3. **Example 3**: Applying off-policy LSTD approach on the MDP for large scale resource allocation problem  `LSTD_max_norm_version_3.m`
+
 - We might use $\eta$ or $\sigma$ in place of $\lambda$ and $\mu$!
 
 ### ADP Folder 
