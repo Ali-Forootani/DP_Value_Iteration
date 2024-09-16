@@ -26,7 +26,7 @@ load mu.mat
 %load T.mat
 load C.mat
 
-T=400;
+T=200;
 
 %lambda=[0.4;0.5;0.4;0.3]
 %mu=[0.35;0.4;0.45;0.25]
@@ -158,10 +158,40 @@ while k>= 1
     
     %lambda=[0.5+0.1*cos(k*pi/3);0.3+.1*sin(k*pi/7);0.2+0.1*cos(k*pi/5)];
     %mu=[0.3-0.1*cos(k*pi/3);0.4-0.1*sin(k*pi/7);0.5-0.1*cos(k*pi/5)];
-
-    lambda=[0.5+0.1*cos(k*pi/3);0.3+.1*sin(k*pi/2);0.2+0.1*cos(k*pi/4); 0.15-0.05*cos(k*pi/3)];
-    mu=[0.3-0.1*cos(k*pi/3);0.4-0.1*sin(k*pi/2);0.5-0.1*cos(k*pi/4); 0.6+0.05*cos(k*pi/3)];
     
+    %% first case
+    %lambda=[0.5+0.1*cos(k*pi/3);0.3+.1*sin(k*pi/2);0.2+0.1*cos(k*pi/4); 0.15-0.05*cos(k*pi/3)];
+    %mu=[0.3-0.1*cos(k*pi/3);0.4-0.1*sin(k*pi/2);0.5-0.1*cos(k*pi/4); 0.6+0.05*cos(k*pi/3)];
+    
+    %% sinusoidal wave second case
+    lambda=[0.5+0.1*cos(k*pi/10);0.3+.1*sin(k*pi/10);0.2+0.1*cos(k*pi/10); 0.15-0.05*cos(k*pi/10)];
+    mu=[0.3-0.1*cos(k*pi/10);0.4-0.1*sin(k*pi/10);0.5-0.1*cos(k*pi/10); 0.6+0.05*cos(k*pi/10)];
+    
+    %%
+    % Define the square wave lambda and mu
+    lambda = [0.5 + 0.1 * square(k * pi / 10); 
+          0.3 + 0.1 * square(k * pi / 10); 
+          0.2 + 0.1 * square(k * pi / 10); 
+          0.15 - 0.05 * square(k * pi / 10)];
+
+    mu = [0.3 - 0.1 * square(k * pi / 10); 
+      0.4 - 0.1 * square(k * pi / 10); 
+      0.5 - 0.1 * square(k * pi / 10); 
+      0.6 + 0.05 * square(k * pi / 10)];
+    %%
+    % Define the sawtooth wave lambda and mu
+    lambda = [0.5 + 0.1 * sawtooth(k * pi / 10); 
+          0.3 + 0.1 * sawtooth(k * pi / 10); 
+          0.2 + 0.1 * sawtooth(k * pi / 10); 
+          0.15 - 0.05 * sawtooth(k * pi / 10)];
+
+    mu = [0.3 - 0.1 * sawtooth(k * pi / 10); 
+      0.4 - 0.1 * sawtooth(k * pi / 10); 
+      0.5 - 0.1 * sawtooth(k * pi / 10); 
+      0.6 + 0.05 * sawtooth(k * pi / 10)];
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     while n1<= NS(1,1) 
         while a <= m 
             if C(a)~=0
