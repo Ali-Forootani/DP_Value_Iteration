@@ -21,6 +21,14 @@ This MATLAB script solves a revenue optimization problem using Dynamic Programmi
 
 **Approximate DP**: To run the ADP algorithm for the MDP you shoudl run `ADP_folder/LSTD_max_norm_version_3.m`
 
+**Exact DP  Periodic**: To run th periodical DP algorithm for the MDP with Sinusoidal, square wave and sawtooth wave you should run `Exact_DP_Periodic.m`!
+
+- %% sinusoidal
+    -- lambda=[0.5+0.1*cos(k*pi/10);0.3+.1*sin(k*pi/10);0.2+0.1*cos(k*pi/10); 0.15-0.05*cos(k*pi/10)];
+    -- mu=[0.3-0.1*cos(k*pi/10);0.4-0.1*sin(k*pi/10);0.5-0.1*cos(k*pi/10); 0.6+0.05*cos(k*pi/10)];
+    
+
+
 ## Script Explanation
 The script consists of the following main sections:
 
@@ -51,6 +59,12 @@ $\mu = [0.483723,\ 0.444019,\ 0.024843,\ 0.335103]$.
 3. **Example 3**: Applying off-policy LSTD approach on the MDP for large scale resource allocation problem  `LSTD_max_norm_version_3.m`
 
 - We might use $\eta$ or $\sigma$ in place of $\lambda$ and $\mu$!
+
+4. **Example 7**: Sinusoidal perturbation on MDP.
+
+5. **Example 8**: Square wave perturbation on MDP.
+
+6. **Example 9**: Sawtooth wave perturbation on MDP. 
 
 ### ADP Folder 
 
