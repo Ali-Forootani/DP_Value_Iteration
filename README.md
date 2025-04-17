@@ -25,9 +25,9 @@ This MATLAB script solves a revenue optimization problem using Dynamic Programmi
 
 - sinusoidal transition probabilities:
 
-    - $\lambda$ = [0.5+0.1*cos (k* $\pi$ /10); 0.3+.1*sin (k*$\pi$ /10);\ 0.2+0.1*cos(k* $\pi$ /10); 0.15-0.05*cos (k*$\pi$ /10)];
+    - $\lambda$ = [0.5+0.1* cos (k* $\pi$ /10); 0.3+.1* sin (k* $\pi$ /10); 0.2+0.1*cos(k* $\pi$ /10); 0.15-0.05*cos (k*$\pi$ /10)];
 
-    - $\mu$ = [0.3-0.1*cos (k*$\pi$ /10); 0.4-0.1* sin (k*$\pi$ /10); 0.5-0.1*cos (k*$\pi$ /10); 0.6+0.05*cos (k*$\pi$ /10)];
+    - $\mu$ = [0.3-0.1* cos (k* $\pi$ /10); 0.4-0.1* sin (k* $\pi$ /10); 0.5-0.1*cos (k* $\pi$ /10); 0.6+0.05*cos (k*$\pi$ /10)];
     
 
 
