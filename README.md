@@ -66,7 +66,9 @@ $\mu = [0.483723,\ 0.444019,\ 0.024843,\ 0.335103]$.
 
 5. **Example 8**: Square wave perturbation on MDP.
 
-6. **Example 9**: Sawtooth wave perturbation on MDP. 
+6. **Example 9**: Sawtooth wave perturbation on MDP.
+
+7. **Appendix/floquet_vs_nofloquet.m**: Floquet Transvormation.
 
 ### ADP Folder 
 
@@ -81,8 +83,9 @@ $\mu = [0.483723,\ 0.444019,\ 0.024843,\ 0.335103]$.
 2. Forootani, Ali, et al. "Approximate dynamic programming for stochastic resource allocation problems." IEEE/CAA Journal of Automatica Sinica 7.4 (2020): 975-990.
 3. Forootani, Ali, et al. "A least-squares temporal difference based method for solving resource allocation problems." IFAC Journal of Systems and Control 13 (2020): 100106.
 4. Forootani, Ali, et al. "Allocating resources via price management systems: a dynamic programming-based approach." International Journal of Control 94.8 (2021): 2123-2143.
+5. Forootani, Ali, et al. "Off-Policy Temporal Difference Learning for Perturbed Markov Decision Processes." IEEE Control Systems Letters, 8, (2024): 3488-3493.
 
-you can contact me via: aliforootani@ieee.org
+you can contact me via: aliforootani@ieee.org/aliforootani@gmail.com
 
 ## License
 This script is provided under the [MIT License](https://opensource.org/licenses/MIT).
